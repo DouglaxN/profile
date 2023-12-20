@@ -60,3 +60,25 @@ modalBtns.forEach((modalBtn, i) => {
         modal(i)
     })
 })
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
+
+// PORTIFOLIO SWIPER
+let swiper = new Swiper(".portifolio_container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+})

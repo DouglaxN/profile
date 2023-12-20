@@ -10,6 +10,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- CSS SWIPER -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
 
     <title>Douglas Nunes</title>
 </head>
@@ -44,7 +47,7 @@
                     </li>
                     <li>
                         <a href="#portifolio" class="nav_link">
-                            <i class="uil uil-scenery nav_icon"></i> Porifolio
+                            <i class="uil uil-scenery nav_icon"></i> Portifolio
                         </a>
                     </li>
                     <li>
@@ -443,8 +446,145 @@
 
             </div>
         </section>
+
+        <!-- PORTIFOLIO -->
+        <section class="portifolio section" id="portifolio">
+            <h2 class="section_title">Portifolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+
+            <div class="portifolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- PORTIFOLIO 1 -->
+                    <div class="portifolio_content grid swiper-slide">
+                        <img src="assents/img/portifolio_microciclojpeg.jpeg" alt="" class="portifolio_img">
+
+                        <div class="portifolio_data">
+                            <h3 class="portifolio_title">Startup</h3>
+                            <p class="portifolio_description">Website adptable to all devices , with ui components and animated interactions.</p>
+                            <a href="#" target="_blank" class="button button-flex button-small portifolio_button">Demo 
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTIFOLIO 2 -->
+                    <div class="portifolio_content grid swiper-slide">
+                        <img src="assents/img/portifolio_lbmg.jpeg" alt="" class="portifolio_img">
+
+                        <div class="portifolio_data">
+                            <h3 class="portifolio_title">Landing page</h3>
+                            <p class="portifolio_description">Adaptable website for the Molecular Biology and Genomics Laboratory at UFRN, with user interface components and animated interactions, compatible with all devices.</p>
+                            <a href="https://lbmg.cb.ufrn.br/" target="_blank" class="button button-flex button-small portifolio_button">Demo 
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTIFOLIO 3 -->
+                    <div class="portifolio_content grid swiper-slide">
+                        <img src="assents/img/portifolio_lbmg.jpeg" alt="" class="portifolio_img">
+
+                        <div class="portifolio_data">
+                            <h3 class="portifolio_title">algumacoisa</h3>
+                            <p class="portifolio_description">Adaptable website for the Molecular Biology and Genomics Laboratory at UFRN, with user interface components and animated interactions, compatible with all devices.</p>
+                            <a href="https://lbmg.cb.ufrn.br/" target="_blank" class="button button-flex button-small portifolio_button">Demo 
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADICINANDO SETAS DO SWIPER -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portifolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left swiper-portifolio-icon"></i>
+                </div>
+                <!-- ADICIONANDO PAGINAÇÃO - BOLINHAS EMBAIXO -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <!-- PROJETO NO MEIO -->
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project_title">You have a new project</h2>
+                        <p class="project_description">Get in touch and explore the possibilities I can offer to your business.</p>
+                        <a href="#contact" class="button button-flex button-white">
+                            Contact Me 
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assents/img/perfil_contact.svg" alt="" class="project_img">
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTRATA EU -->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact</h2>
+            <sapn class="section_subtitle">Get in touch</sapn>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">douglas.devx@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Natal - RN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_from grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Nome:</label>
+                            <input type="text" class="contact_input">
+                        </div>
+
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email:</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Project:</label>
+                        <input type="text" class="contact_input">
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message:</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="" class="button button-flex">
+                            Send Message <i class="uil uil-message button_icon"></i>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <script src="JS/main.js"></script>
+    <script src="JS/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
